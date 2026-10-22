@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.counter-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 25px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #29264a;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+#count {
+    font-size: 80px;
+    font-weight: bold;
+    color: #5b4bdb;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    flex: 1;
+    padding: 14px 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+button:focus-visible {
+    outline: 3px solid #29264a;
+    outline-offset: 3px;
+}
+
+#increase-btn {
+    background: #5b4bdb;
+}
+
+#reset-btn {
+    background: #e05260;
+}
+
+@media (max-width: 350px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
